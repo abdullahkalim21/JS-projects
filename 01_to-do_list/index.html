@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            color: black;
+            background-color: burlywood;
+        }
+        .container {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DAILY TO-DO LIST</h1>
+        <p>Enter you to-do items below</p>
+        <input type="text" name="tasks" id="tasks" placeholder="New item...">
+        <button id="enter">Enter</button>
+        <div class="list-items">
+            <ol type="i"></ol>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
