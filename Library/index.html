@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style src="./style.css"></style>
+</head>
+
+<body>
+    <div class="header">
+        <i class="fa-solid fa-book"></i>
+        <h1>Library</h1>
+    </div>
+
+    <button type="submit" id="add-new-book">Add new Book</button>
+    <dialog>
+        <h3>Add new Book</h3>
+        <form id="book-form" method="dialog">
+            <input type="text" name="title" id="title" placeholder="Title of the Book">
+            <input type="text" name="author" id="author" placeholder="Author's name">
+            <input type="text" name="pages" id="pages" placeholder="Number of pages">
+            <input type="text" name="reading-status" id="reading-status" placeholder="Read it or Not">
+        </form>
+        <p id="error-message"></p>
+        <button id="submit-btn">Submit Book</button>
+        <button id="close-btn">Close</button>
+    </dialog>
+    <div id="books-collection"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
